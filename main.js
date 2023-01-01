@@ -88,7 +88,7 @@ const createWindow = () => {
     title: app.name,
     skipTaskbar:true,
     backgroundColor: "#000",
-    icon: '/icons/app/shimaenaga_512x512.icns',
+    icon: __dirname + '/icons/app/shimaenaga_512x512.icns',
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     },
@@ -127,8 +127,7 @@ function menuGroupCheck(menu, groupIds , enableId) {
 const createTray = () => {
   console.log(`darwin ${isMac()}`)
   const contextMenu = Menu.buildFromTemplate([
-    {label:'終了', role: 'quit'}
-    ,{
+    {
       label: 'ショートカットキー',
       submenu: [ // 要リファクタリング
         {id: 'a',  label: isMac() ? '⌘ + B' : 'Ctrl + B', shourtcutKey: 'CommandOrControl+B' ,type: 'checkbox', checked: loadHotkey()=='CommandOrControl+B', click: (e)=>{//任意のデータを入れてeで拾うことができる
@@ -144,7 +143,8 @@ const createTray = () => {
           updateOpenHotKey(e.shourtcutKey);
         } },
       ]
-    },
+    },{label:'終了', role: 'quit'}
+    ,
   ])
   tray = new Tray(__dirname + '/icons/tray/macos/32x32@2x.png')
   tray.setToolTip(app.name)
