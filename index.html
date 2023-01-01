@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <link>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="./destyle.css"></link>
+    <link rel="stylesheet" href="./style.css" ></link>
+  </head>
+  <body>
+    <div id="mainCont">
+      <p id="info">ctrl + shift + cで変換後のテキストをコピーします。ESCで閉じる</p>
+      <div id="commandsCont">
+        <input id="commands" placeholder="camelcase | trim">
+        <span id="showCommands">show all</span>
+      </div>
+      <div id="datasCont">
+        <div id="srcCont">
+          <textarea id="src">
+          </textarea>
+        </div>
+        <div id="dstCont">
+          <textarea id="dst">
+          </textarea>
+        </div>
+      </div>
+      <ul id="autocomplete">
+      </ul>
+    </div>
+  </body>
+
+  <script src="./render.js"></script>
+</html>

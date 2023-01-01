@@ -1,0 +1,116 @@
+*:focus {
+  outline: none;
+}
+
+body {
+  background-color: #1B1B1B;
+  color: #fff;
+  user-select: none;
+  font-size: 5vh;
+}
+
+#mainCont {
+  padding-top:2vh;
+  width: 98vw;
+  padding-left: 2vw;
+}
+p#info {
+  position: fixed;
+  top:2vh;
+  font-size: 1em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
+#commandsCont {
+  top: 12vh;
+  position: fixed;
+  width: 96vw;
+}
+
+#commandsCont input {
+  width: 100%;
+  ime-mode: disabled;
+  font-size: 2em;
+  border: solid 1px #555555;
+  padding: 3px 10px 3px 10px;
+}
+
+#datasCont {
+  min-width: 96%;
+  min-height: 10em;
+  top: 30vh;
+  position: fixed;
+}
+
+#datasCont textarea {
+  border: none;
+  color:#fff;
+  background-color: #343434;
+  padding: 10px 10px 10px 10px;
+  height: 65vh;
+}
+
+#datasCont #srcCont {
+  display: none;
+  color:#fff;
+  background-color: #343434;
+}
+
+#datasCont > div {
+  position: absolute;
+  min-width: 100%;
+  max-width: 100%;
+  color:#fff;
+  background-color: #343434;
+}
+
+#datasCont textarea {
+  width: 100%;
+  resize: none;
+  background-color: #343434;
+}
+
+#autocomplete li {
+  border: solid 1px;
+}
+
+#autocomplete li.selected {
+  font-weight: bold;
+  font-style: italic;
+}
+
+#autocomplete span.match {
+  color:lime;
+}
+
+#autocomplete {
+  max-height: 8em;
+  overflow-y: auto;
+  width: 96vw;
+  background-color: #1B1B1B;
+  position: fixed;
+  top: 25vh;
+  scrollbar-color:white;
+}
+
+#autocomplete li span.title {
+  padding:10px;
+}
+
+#autocomplete li span.desc {
+  color:gray;
+  padding:1em;
+}
+
+#showCommands {
+  border: solid 1px gray;
+  border-radius: 40%;
+  padding: 5px 10px 5px 10px;
+  position: fixed;
+  top:14vh;
+  right:4vw;
+
+}
