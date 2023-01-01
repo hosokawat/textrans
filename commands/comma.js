@@ -6,6 +6,6 @@ module.exports = {
     }
     return '';
   },
-  description:'sneak case',
+  description:'add commma "1000" => "1,000" ',
   vendor: 'official',
 }

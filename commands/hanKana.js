@@ -33,6 +33,6 @@ module.exports = {
   action:(val) => {
     return zenkana2Hankana(val)
   },
-  description:'fullwidth to half width',
+  description:'fullwidth kana to half width kana "アメンボ" => "ｱﾒﾝﾎ"',
   vendor: 'official',
 }

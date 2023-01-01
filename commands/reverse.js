@@ -1,5 +1,5 @@
 module.exports = {
   action:(val) => val.split("").reverse().join(""),
-  description:'sneak case',
+  description:'reverse text "abc" => "cba"',
   vendor: 'official',
 }

@@ -5,6 +5,6 @@ module.exports = {
   });
 
   },
-  description:'fullwidth to half width',
+  description:'convert full Width "aaa" => "ａａａ"',
   vendor: 'official',
 }

@@ -5,6 +5,6 @@ module.exports = {
   });
 
   },
-  description:'fullwidth to half width',
+  description:'fullwidth to half width ａａａ => "aaa"',
   vendor: 'official',
 }

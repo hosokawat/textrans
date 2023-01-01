@@ -1,5 +1,5 @@
 module.exports = {
   action:(val) => String.prototype['toUpperCase'].apply(val),
-  description:'upcase',
+  description:'upcase "aaa" => "AAA"',
   vendor: 'official',
 }
